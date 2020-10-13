@@ -1,7 +1,7 @@
 # FunFacts-fetch-Api  
 Using fetch( )  to get 🎉 fun facts ✨ from a [public api](https://uselessfacts.jsph.pl/) 🎈
 
-##TODO
+## TODO
 
 ✔ Fetch facts  
 ✔ Save facts to localStorage  
@@ -9,7 +9,8 @@ Using fetch( )  to get 🎉 fun facts ✨ from a [public api](https://uselessfac
 ⬛ Delete all facts (Clear)  
 ⬛ Mobile view  
 
-##Demo
+## Demo  
+
 Live demo hosted on netlify
 
 ![sss](img/funcFactsFetchApi.png)
