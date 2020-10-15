@@ -5,9 +5,9 @@ Using fetch( )  to get 🎉 fun facts ✨ from a [public api](https://uselessfac
 
 ✔ Fetch facts  
 ✔ Save facts to localStorage  
-⬛ Delete specific facts  
-⬛ Delete all facts (Clear)  
-⬛ Mobile view  
+✔ Delete specific facts  
+✔ Delete all facts (Clear)  
+✔ Mobile view  
 
 ## Demo  
 
