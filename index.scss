@@ -27,7 +27,7 @@ body{
             background-color: #FFFFFF;
             box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.1);
             #button{
-                margin-top: 1rem;
+                margin-top: 1.4rem;
                 padding: .5rem 1rem;
                 font-size: 1rem;
                 border: none;
@@ -55,7 +55,7 @@ body{
                 display: none;
                 position: absolute;
                 font-size: 1.4rem;
-                color: #4B4A4B;
+                color: #e2dfe6;
                 left: -3rem;
                 top: .2rem;
                 cursor: pointer;
@@ -86,7 +86,34 @@ body{
                 color: #4B4A4B;
                 font-size: 2rem;
             }
+            #delete-wrapper{
+                position: relative;
+                display: inline-block;
+                #tooltip-delete{
+                    position: absolute;
+                    top: 2.5rem;
+                    width: 115px;
+                    padding: .2rem .2rem;
+                    border-radius: .4rem;
+                    color: #FFFFFF;
+                    background-color: #FBB6CE;
+                    display: none;
+                }
+                #delete-button{
+                    margin-left: 1rem;
+                    color: #e2dfe6;
+                    cursor: pointer;
+                    &:hover{
+                        color: #f587ad;
+                    }
+                    &:hover + #tooltip-delete{
+                        display: block;
+                        animation: tootltip .2s ease-in-out;
+                    }
+                }
+            }
         }
+        
         h1{
             font-size: 1.6rem;
             color: #000000;
@@ -99,8 +126,57 @@ body{
                 padding: 1rem 0;
                 border-bottom: 1px solid #FBB6CE;
                 color: #4B4A4B;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                i{
+                    color: #e2dfe6;
+                    font-size: 1rem;
+                    cursor: pointer;
+                    margin-right: .5rem;
+                    &:hover{
+                        color: #FBB6CE;
+                    }
+                }
             }
         }
     }
     
+}
+@media only screen and (max-width: 768px){
+    #main-flex{
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        #dashboard{
+            width: 100%;
+            main{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                #add-fact{
+                    display: none;
+                    padding: 1rem;
+                    position: relative;
+                    text-align: center;
+                    width: 30%;
+                }
+            }
+        }
+        #saved-facts{
+            width: 100%;
+        }
+    }
+}
+@keyframes tootltip{
+    0%{
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
 }
